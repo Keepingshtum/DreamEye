@@ -66,7 +66,7 @@ response = prediction_client.predict(model_full_id, payload, params)
 print("Prediction results:")
 for result in response.payload:
     print("Predicted class name: {}".format(result.display_name))
-    print("Predicted class score: {}".format(result.classification.score))
+    print("Predicted class score: {0:f}".format(result.classification.score))
 r1=result.display_name;
 r2=result.classification.score
 
